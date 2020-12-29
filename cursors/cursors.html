@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/cursors.css" />
+  <title>Cursor Crazy</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">auto</div>
+          <div class="info">The UA will determine the cursor to display based on the current context.</div>
+        </div>
+        <div class="example auto"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">default</div>
+          <div class="info">The platform dependent default cursor. Typically an arrow.</div>
+        </div>
+        <div class="example default"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">none</div>
+          <div class="info">No cursor is rendered.</div>
+        </div>
+        <div class="example none"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">context-menu</div>
+          <div class="info">A context menu is available.</div>
+        </div>
+        <div class="example context-menu"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">help</div>
+          <div class="info">Help information is available.</div>
+        </div>
+        <div class="example help"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">pointer</div>
+          <div class="info">The cursor is a pointer that indiciates a link. Typically an image of a pointing hand.
+          </div>
+        </div>
+        <div class="example pointer"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">progress</div>
+          <div class="info">The program is busy in the background, but the user cann still interact with the interface (in contrast to wait).</div>
+        </div>
+        <div class="example progress"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">wait</div>
+          <div class="info">The program is busy, and the user can't interact with the interface (in contrast to progress).</div>
+        </div>
+        <div class="example wait"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">cell</div>
+          <div class="info">The table cell or set of cells can be selected.</div>
+        </div>
+        <div class="example cell"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">crosshair</div>
+          <div class="info">Cross cursor, often used to indicate selection in a bitmap.</div>
+        </div>
+        <div class="example crosshair"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">text</div>
+          <div class="info">The text can be selected. Typically the shape of a  I-beam.</div>
+        </div>
+        <div class="example text"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">vertical-text</div>
+          <div class="info">The vertical text can be selected. Typically the shape of a sideways I-beam.</div>
+        </div>
+        <div class="example vertical-text"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">alias</div>
+          <div class="info">An alias or shortcut is to be created.</div>
+        </div>
+        <div class="example alias"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">copy</div>
+          <div class="info">Something is to be copied.</div>
+        </div>
+        <div class="example copy"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">move</div>
+          <div class="info">Something is to be moved.</div>
+        </div>
+        <div class="example move"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">no-drop</div>
+          <div class="info">An item may not be dropped a tthe current location. On mac OS X this is the same as <code>not-allowed</code>.</div>
+        </div>
+        <div class="example no-drop"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">not-allowed</div>
+          <div class="info">The requested action will not be carried out.</div>
+        </div>
+        <div class="example not-allowed"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">grab</div>
+          <div class="info">Something can be grabbed (dragged to be moved).</div>
+        </div>
+        <div class="example grab"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">grabbing</div>
+          <div class="info">Something is being grabbed (dragged to be moved).</div>
+        </div>
+        <div class="example grabbing"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">all-scroll</div>
+          <div class="info">Something can be scrolled in any direction (panned). On Windows, <code>all-scroll</code> is the same as <code>move</code>.</div>
+        </div>
+        <div class="example all-scroll"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">col-resize</div>
+          <div class="info">The item/column can be resized horizontally. Often rendered as arrows pointing left and right with a vertical bar separating them.</div>
+        </div>
+        <div class="example col-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">row-resize</div>
+          <div class="info">The item/row can be resized vertically. Often rendered as arrows pointing up and down with a horizontal bar separating them.</div>
+        </div>
+        <div class="example row-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">n-resize</div>
+          <div class="info">The top edge is to be moved.</div>
+        </div>
+        <div class="example n-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">e-resize</div>
+          <div class="info">The right edge is to be moved.</div>
+        </div>
+        <div class="example e-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">s-resize</div>
+          <div class="info">The bottom edge is to be moved.</div>
+        </div>
+        <div class="example s-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">w-resize</div>
+          <div class="info">The left edge is to be moved.</div>
+        </div>
+        <div class="example w-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">ne-resize</div>
+          <div class="info">The top right corner is to be moved.</div>
+        </div>
+        <div class="example ne-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">se-resize</div>
+          <div class="info">The bottom right corner is to be moved.</div>
+        </div>
+        <div class="example se-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">sw-resize</div>
+          <div class="info">The bottom left corner is to be moved.</div>
+        </div>
+        <div class="example sw-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">nw-resize</div>
+          <div class="info">The top left corner is to be moved.</div>
+        </div>
+        <div class="example nw-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">ew-resize</div>
+          <div class="info">Bi-directional resize cursor (left-right).</div>
+        </div>
+        <div class="example ew-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">ns-resize</div>
+          <div class="info">Bi-directional resize cursor (up-down).</div>
+        </div>
+        <div class="example ns-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">nesw-resize</div>
+          <div class="info">Bi-directional resize cursor.</div>
+        </div>
+        <div class="example nesw-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">nwse-resize</div>
+          <div class="info">Bi-directional resize cursor.</div>
+        </div>
+        <div class="example nwse-resize"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">zoom-in</div>
+          <div class="info">Something can be zoomed in on.</div>
+        </div>
+        <div class="example zoom-in"></div>
+      </div>
+      <div class="cursor-type">
+        <div class="details">
+          <div class="title">zoom-out</div>
+          <div class="info">Something can be zoomed out from.</div>
+        </div>
+        <div class="example zoom-out"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.row {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-auto-rows: 1fr;
+  margin: 0 25%;
+}
+
+.cursor-type {
+  background-color: #dddddd;
+  display: flex;
+  flex-basis: 20%;
+  flex-grow: 1;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 7px;
+  border: 2px solid #bed0e0;
+}
+
+.cursor-type div.title {
+  font-size: .9em;
+  height: 2em;
+  color: #123e63;
+  font-weight: 700;
+}
+
+.cursor-type div.info {
+  font-size: .7em;
+}
+
+.details {
+  width: 75%;
+}
+
+code {
+  font-family: consolas, "Liberation Mono", courier, monospace;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.example {
+  width: 20%;
+  height: 100%;
+  margin: auto;
+  border: 1px solid white;
+  background-color: #eeeeee;
+}
+
+.example:hover {
+  background-color: #bed0e0;
+}
+
+.example.auto:hover {
+  cursor: auto;
+}
+
+.example.default:hover {
+  cursor: default;
+}
+
+.example.none:hover {
+  cursor: none;
+}
+
+.example.context-menu:hover {
+  cursor: context-menu;
+}
+
+.example.help:hover {
+  cursor: help;
+}
+
+.example.pointer:hover {
+  cursor: pointer;
+}
+
+.example.progress:hover {
+  cursor: progress;
+}
+
+.example.wait:hover {
+  cursor: wait;
+}
+
+.example.cell:hover {
+  cursor: cell;
+}
+
+.example.crosshair:hover {
+  cursor: crosshair;
+}
+
+.example.text:hover {
+  cursor: text;
+}
+
+.example.vertical-text:hover {
+  cursor: vertical-text;
+}
+
+.example.alias:hover {
+  cursor: alias;
+}
+
+.example.copy:hover {
+  cursor: copy;
+}
+
+.example.move:hover {
+  cursor: move;
+}
+
+.example.no-drop:hover {
+  cursor: no-drop;
+}
+
+.example.not-allowed:hover {
+  cursor: not-allowed;
+}
+
+.example.grab:hover {
+  cursor: grab;
+}
+
+.example.grabbing:hover {
+  cursor: grabbing;
+}
+
+.example.all-scroll:hover {
+  cursor: all-scroll;
+}
+
+.example.col-resize:hover {
+  cursor: col-resize;
+}
+
+.example.row-resize:hover {
+  cursor: row-resize;
+}
+
+.example.n-resize:hover {
+  cursor: n-resize;
+}
+
+.example.e-resize:hover {
+  cursor: e-resize;
+}
+
+.example.s-resize:hover {
+  cursor: s-resize;
+}
+
+.example.w-resize:hover {
+  cursor: w-resize;
+}
+
+.example.ne-resize:hover {
+  cursor: ne-resize;
+}
+
+.example.se-resize:hover {
+  cursor: se-resize;
+}
+
+.example.sw-resize:hover {
+  cursor: sw-resize;
+}
+
+.example.nw-resize:hover {
+  cursor: nw-resize;
+}
+
+.example.ew-resize:hover {
+  cursor: ew-resize;
+}
+
+.example.ns-resize:hover {
+  cursor: ns-resize;
+}
+
+.example.nesw-resize:hover {
+  cursor: nesw-resize;
+}
+
+.example.nwse-resize:hover {
+  cursor: nwse-resize;
+}
+
+.example.zoom-in:hover {
+  cursor: zoom-in;
+}
+
+.example.zoom-out:hover {
+  cursor: zoom-out;
+}
