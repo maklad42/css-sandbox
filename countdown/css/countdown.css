@@ -48,7 +48,18 @@
   transform: rotate(90deg);
   transform-origin: center;
   transition: 1s linear all;
-  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  stroke: rgb(163, 46, 199);
+}
+
+.base-timer__path-remaining.orange {
+  stroke: orange;
+}
+
+.base-timer__path-remaining.red {
+  stroke: red;
 }
 
 .base-timer__label {
