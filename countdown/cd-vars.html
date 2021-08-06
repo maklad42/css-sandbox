@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/cd-vars.css" />
+  <title>Variable Countdown</title>
+</head>
+<body>
+  <div class="container">
+    <div class="cd-card">
+      <div id="app"></div>
+      <div class="cd-controls">
+        <div class="time">
+          <label for="time-spinner" id="time-spinner-label" name="time-spinner-label" value="css">Timer Length (s):</label>
+          <input id="time-spinner" type="number" min="1" step="1" value="20" size="7">
+        </div>
+        <div class="warning">
+          <label for="warning-spinner" id="time-spinner-label" name="warning-spinner-label" value="css">Warning At (s):</label>
+          <input id="warning-spinner" type="number" min="1" step="1" value="20" size="7">
+        </div>
+        <div class="alert">
+          <label for="alert-spinner" id="time-spinner-label" name="alert-spinner-label" value="css">Alert At (s):</label>
+          <input id="alert-spinner" type="number" min="1" step="1" value="20" size="7">
+        </div>
+        <button class="start-btn" onClick="startTimer()">Start</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/cd-vars.js"></script>
+</body>
+</html>

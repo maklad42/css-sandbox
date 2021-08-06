@@ -107,4 +107,4 @@ document.getElementById('app').innerHTML = `
 </div>
 `;
 
-startTimer();
+// startTimer();
