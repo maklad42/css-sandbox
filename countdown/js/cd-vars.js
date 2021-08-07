@@ -24,11 +24,7 @@ let FULL_DASH_ARRAY = 283;
 function formatTimeLeft(time) {
   const minutes = Math.floor(time / 60);
 
-  let seconds = time % 60;
-
-  if (seconds < 10) {
-    seconds = `0${seconds}`;
-  }
+  let seconds = ('' + (time % 60)).padStart(2, '0');
 
   return `${minutes}:${seconds}`;
 }
@@ -40,7 +36,7 @@ function startTimer() {
       timeLeft = TIME_LIMIT - timePassed;
 
       document.getElementById('base-timer-label').innerHTML =
-        formatTimeLeft(timeLeft);
+        timePassed === TIME_LIMIT ? 'Finished!' : formatTimeLeft(timeLeft);
       setCircleDashArray();
       setRemainingPathColor(timeLeft);
     } else {
