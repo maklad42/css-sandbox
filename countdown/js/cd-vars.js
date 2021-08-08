@@ -30,6 +30,7 @@ function formatTimeLeft(time) {
 }
 
 function startTimer() {
+  setCircleDashArray();
   timerInterval = setInterval(() => {
     if (timeLeft > 0) {
       timePassed += 1;
@@ -46,8 +47,9 @@ function startTimer() {
 }
 
 function calculateTimeFraction() {
-  const rawTimeFraction = timeLeft / TIME_LIMIT;
-  return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
+  // const rawTimeFraction = timeLeft / TIME_LIMIT;
+  // return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
+  return timeLeft / TIME_LIMIT;
 }
 
 function setCircleDashArray() {
@@ -86,7 +88,7 @@ document.getElementById('app').innerHTML = `
       <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
       <path
         id="base-timer-path-remaining"
-        stroke-dasharray="283"
+        stroke-dasharray="283 283"
         class="base-timer__path-remaining ${remainingPathColor}"
         d="
           M 50, 50
