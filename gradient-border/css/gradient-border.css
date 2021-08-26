@@ -34,18 +34,35 @@ h1 {
 
 .image-wrapper img {
   position: relative;
-  margin: auto;
-  width: calc(475px * 0.5);
-  height: calc(569px * 0.5);
+  max-width: 20vw;
+  padding: 30px;
 }
 
-.cd-card {
-  width: 475px;
-  height: 569px;
-  background-color: rgb(232, 237, 247);
-  box-shadow: 0 0 20px grey;
-  margin: auto;
-  margin-top: 5rem;
-  border-radius: 5px;
-  padding-top: 20px;
+.border-1 {
+  background-image: linear-gradient(darkorange, magenta);
+}
+
+.border-2 {
+  background-image: linear-gradient(45deg, darkblue, tomato);
+}
+
+.border-3 {
+  background-image: linear-gradient(rgba(255, 0, 0, 0), teal),
+    linear-gradient(to right, teal, rgba(255, 0, 0, 0));
+  background-repeat: no-repeat;
+  background-size: 30px 55%, 55% 30px;
+  background-position: left bottom, left bottom, 30px 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.border-4 {
+  background-image: linear-gradient(rgba(255, 0, 0, 0), slategray),
+    linear-gradient(to right, slategray, rgba(255, 0, 0, 0)),
+    linear-gradient(slategray, rgba(255, 0, 0, 0)),
+    linear-gradient(to left, slategray, rgba(255, 0, 0, 0));
+  background-repeat: no-repeat;
+  background-size: 30px 85%, 85% 30px, auto 85%, 85% 30px;
+  background-position: left bottom, left bottom, 30px 30px, right top, right top,
+    30px 30px;
 }
