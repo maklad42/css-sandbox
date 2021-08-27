@@ -18,9 +18,9 @@ body {
   overflow: scroll;
 }
 
-h1 {
-  position: relative;
-  margin: auto;
+h1,
+blockquote {
+  text-align: center;
 }
 
 .container {
