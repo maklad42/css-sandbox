@@ -22,13 +22,13 @@ body {
   font-size: 1.3rem;
   font-family: Montserrat;
   letter-spacing: 1px;
-  color: teal;
+  color: rgb(7, 59, 59);
   scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
-  color: teal;
+  color: rgb(7, 59, 59);
 }
 
 em {
@@ -48,7 +48,7 @@ em {
 .header h3 {
   margin-top: 0;
   padding-top: 25px;
-  background-color: rgba(125, 125, 125, 0.5);
+  background-color: rgba(255, 40, 190, 0.5);
 }
 
 .animated-button {
@@ -68,7 +68,7 @@ em {
 }
 
 .button {
-  background: #e75a7c;
+  background: #93d6f5;
   height: 60px;
   width: 200px;
   display: inline-block;
@@ -96,4 +96,62 @@ span {
 .button i {
   top: 100%;
   line-height: 60px;
+}
+
+.button:hover em,
+.button.hover em {
+  top: -100px;
+}
+
+em,
+i {
+  transition: top 0.3s;
+}
+
+.button::before,
+.button::after {
+  /* position: absolute; */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.button::before {
+  content: 'File size: 77Mb';
+  width: 200px;
+  height: 60px;
+  background: #0e84a1;
+  border-radius: 0.25em;
+  bottom: 90px;
+  line-height: 60px;
+  left: calc(50% - 80px);
+  font-size: 15px;
+}
+
+.button::after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  border-top-color: #0e84a1;
+  bottom: 70px;
+  left: calc(50% - 10px);
+}
+
+.button:hover::before,
+.button:hover::after,
+.button.hover::before,
+.button.hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover::before,
+.button.hover::before {
+  bottom: 80px;
+}
+
+.button:hover::after,
+.button.hover::after {
+  bottom: 60px;
 }
