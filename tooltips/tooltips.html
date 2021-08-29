@@ -10,7 +10,7 @@
 <body>
   <div class="tooltip">
     <div class="header">
-      <h3>Animated Button</h3>
+      <h2>Animated Button</h3>
     </div>
     <div class="animated-button">
       <div class="normal-state">
@@ -22,12 +22,31 @@
         </a>
       </div>
       <div class="hover-state">
-        <a class="button" href="#0">
+        <a class="button hover" href="#0">
           <span>
             <em>Download</em>
             <i class="fa fa-download"></i>
           </span>
         </a>
+      </div>
+    </div>
+    <div class="question-tip">
+      <div class="normal-state">
+        <form>
+          <input type="text" placeholder="username"/>
+          <div class="anim">
+            <span class="q-tip" data-q-tip="username must consist of 29 symbols.">?</span>
+          </div>
+        </form>
+      </div>
+      <div class="hover-state">
+        <form>
+          <input type="text" placeholder="username" />
+          <div class="anim">
+            <span class="q-tip hover"
+              data-q-tip="username must consist of 29 symbols.">?</span>
+          </div>
+        </form>
       </div>
     </div>
   </div>
