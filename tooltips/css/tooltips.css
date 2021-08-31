@@ -296,6 +296,10 @@ i {
   margin: auto;
 }
 
+.feature .feat-tip .info {
+  text-align: left;
+}
+
 .feat-cont {
   background: url('https://lh3.ggpht.com/PQXITv6h0hTZLqlvlni7RSN2rE70QytYeNAtngBc3wKQuq8g5gH28EUDqYKgCPkWfQ=h900-rw')
     no-repeat;
@@ -357,4 +361,16 @@ i {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.arrow {
+  position: absolute;
+  margin: 10px 0 0 86px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(240, 240, 240, 1);
 }
